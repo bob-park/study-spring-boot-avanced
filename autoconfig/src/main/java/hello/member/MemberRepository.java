@@ -20,7 +20,10 @@ public class MemberRepository {
     }
 
     public void save(Member member) {
-        template.update("insert into member(member_id, name) values(?, ?)", member.getMemberId(), member.getName());
+
+        template.update("insert into member(member_id, name) values(?, ?)",
+            member.getMemberId(),
+            member.getName());
     }
 
     public Member find(String memberId) {

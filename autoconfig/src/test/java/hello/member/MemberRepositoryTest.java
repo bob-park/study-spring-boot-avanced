@@ -17,6 +17,7 @@ class MemberRepositoryTest {
     @Test
     void memberTest() {
         Member member = new Member("idA", "memberA");
+
         memberRepository.initTable();
         memberRepository.save(member);
 
