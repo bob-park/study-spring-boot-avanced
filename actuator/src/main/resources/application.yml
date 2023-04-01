@@ -1,10 +1,27 @@
 ## spring
 management:
+  info:
+    java:
+      enabled: on
+    os:
+      enabled: on
+    env:
+      enabled: on
+  endpoint:
+    shutdown: # 해당 기능은 사용시 주의해야함
+      enabled: on
+    health:
+      show-components: always
+  #      show-details: always
   endpoints:
     web: ## actuator 기능을 web 에 모두 노출하겠다는 것
       exposure:
         include: "*"
 
+info: # actuator 의 info 정보를 추가로 하고 싶은 경우
+  app:
+    name: hello-actuator
+    company: bob-park
 
 ## logging
 logging:
