@@ -23,7 +23,7 @@ public class MyDataSourceValueConfiguration {
     @Value("${my.datasource.password}")
     private String password;
 
-    @Value("${my.datasource.etc.max-connection}")
+    @Value("${my.datasource.etc.max-connection:5}")
     private int maxConnection;
 
     @Value("${my.datasource.etc.timeout}")
@@ -42,7 +42,7 @@ public class MyDataSourceValueConfiguration {
         @Value("${my.datasource.url}") String url,
         @Value("${my.datasource.username}") String username,
         @Value("${my.datasource.password}") String password,
-        @Value("${my.datasource.etc.max-connection}") int maxConnection,
+        @Value("${my.datasource.etc.max-connection:2}") int maxConnection,
         @Value("${my.datasource.etc.timeout}") Duration timeout,
         @Value("${my.datasource.etc.options}") List<String> options) {
         return new MyDataSource(url, username, password, maxConnection, timeout, options);
