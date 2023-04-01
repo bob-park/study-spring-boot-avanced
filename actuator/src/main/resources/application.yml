@@ -1,5 +1,7 @@
 ## spring
 management:
+#  server:
+#    port: 9092
   info:
     java:
       enabled: on
