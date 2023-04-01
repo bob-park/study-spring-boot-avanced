@@ -15,7 +15,7 @@ import hello.configure.MyDataSourceValueConfiguration;
 //@Import(MyDataSourceConfigurationV1.class)
 //@Import(MyDataSourceConfigurationV2.class)
 @Import(MyDataSourceConfigurationV3.class)
-@SpringBootApplication(scanBasePackages = "hello.datasource")
+@SpringBootApplication(scanBasePackages = {"hello.datasource", "hello.pay"})
 public class ExternalReadApplication {
 
     public static void main(String[] args) {
