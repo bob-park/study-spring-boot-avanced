@@ -16,7 +16,12 @@ configurations {
 }
 
 repositories {
+
     mavenCentral()
+}
+
+ext{
+    queryDslVersion = "5.0.0"
 }
 
 dependencies {

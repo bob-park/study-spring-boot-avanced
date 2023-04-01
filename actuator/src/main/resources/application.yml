@@ -30,4 +30,4 @@ logging:
   level:
     root: info
     web: debug
-    hello: debug
+#    hello: debug
