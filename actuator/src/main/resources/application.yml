@@ -1,3 +1,9 @@
+## server
+server:
+  tomcat:
+    mbeanregistry:
+      enabled: on # tomcat metric 활성화
+
 ## spring
 management:
 #  server:
@@ -13,8 +19,8 @@ management:
     shutdown: # 해당 기능은 사용시 주의해야함
       enabled: on
     health:
-      show-components: always
-  #      show-details: always
+#      show-components: always
+        show-details: always
   endpoints:
     web: ## actuator 기능을 web 에 모두 노출하겠다는 것
       exposure:
